@@ -4,6 +4,8 @@
 
 ### Setup the database
 
+Install [Postgres](https://www.postgresql.org/)
+
 #### login to the database
 ```
 $ sudo su - postgres
