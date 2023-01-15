@@ -11,7 +11,7 @@ GET /GamesByDate/{date}
 ### Example
 
 ```
-curl localhost:8080/GamesByDate/2022-OCT-01
+curl -i localhost:8080/GamesByDate/2022-OCT-01
 ```
 
 
@@ -24,7 +24,7 @@ GET /PlayersByTeam/{team}
 `
 ### Example
 ```
-curl localhost:8080/PlayersByTeam/LAC
+curl -i localhost:8080/PlayersByTeam/LAC
 ```
 
 ## Player details by Name
@@ -36,5 +36,5 @@ GET /PlayerDetailsByName/{firstname}/{lastname}
 `
 ### Example
 ```
-curl localhost:8080/PlayerDetailsByName/Jalen/Green
+curl -i localhost:8080/PlayerDetailsByName/Jalen/Green
 ```
