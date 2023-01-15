@@ -31,9 +31,9 @@ curl localhost:8080/PlayersByTeam/LAC
 
 ### Request
 
-```
+`
 GET /PlayerDetailsByName/{firstname}/{lastname}
-```
+`
 ### Example
 ```
 curl localhost:8080/PlayerDetailsByName/Jalen/Green
