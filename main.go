@@ -13,11 +13,6 @@ func main() {
 	loadEnv()
 
 	r := gin.Default()
-	r.GET("/tab", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"res": "Hello World",
-		})
-	})
 	r.GET("/GamesByDate/:date", nba.GetGamesByDate)
 	r.GET("/PlayersByTeam/:team", nba.GetPlayersByTeam)
 	r.GET("/PlayerDetailsByName/:firstname/:lastname", nba.GetPlayerDetailsByName)
