@@ -1,7 +1,19 @@
-## NBA Sports API Consumer
+# NBA Sports API Consumer
 
-#### Games by Date
+## Get Games by Date
 
-#### Players by Team
+```
+curl localhost:8080/GamesByDate/2022-OCT-01
+```
 
-#### Player details by Name
+## Players by Team
+
+```
+curl localhost:8080/PlayersByTeam/LAC
+```
+
+## Player details by Name
+
+```
+curl localhost:8080/PlayerDetailsByName/Jalen/Green
+```
