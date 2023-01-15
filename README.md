@@ -4,9 +4,9 @@
 
 ### Request
 
-```
-curl localhost:8080/GamesByDate/{date}
-```
+`
+GET /GamesByDate/{date}
+`
 
 ### Example
 
