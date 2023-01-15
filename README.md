@@ -1,40 +1,70 @@
 # NBA Sports API Consumer
 
-## Get Games by Date
+## Setup
 
-### Request
+### Setup the database
+
+#### login to the database
+```
+$ sudo su - postgres
+$ psql
+```
+
+#### create database and user
+
+```
+CREATE DATABASE nba;
+CREATE USER '<your_user>' WITH ENCRYPTED PASSWORD '<your_password>';
+GRANT ALL PRIVILEGES ON DATABASE nba TO '<your_user>';
+```
+
+#### run sql queries that you can find insde the `database/schema` folder
+
+```
+$ cd /path/to/go-nba-sports-api-test/database/schema
+$ psql -U '<your_user>' -d nba -f team.sql
+$ psql -U '<your_user>' -d nba -f player.sql
+```
+
+### Change `env` file
+
+## REST APIs
+
+### Get Games by Date
+
+#### Request
 
 `
 GET /GamesByDate/{date}
 `
 
-### Example
+#### Example
 
 ```
 curl -i localhost:8080/GamesByDate/2022-OCT-01
 ```
 
 
-## Players by Team
+### Players by Team
 
-### Request
+#### Request
 
 `
 GET /PlayersByTeam/{team}
 `
-### Example
+#### Example
 ```
 curl -i localhost:8080/PlayersByTeam/LAC
 ```
 
-## Player details by Name
+### Player details by Name
 
-### Request
+#### Request
 
 `
 GET /PlayerDetailsByName/{firstname}/{lastname}
 `
-### Example
+#### Example
 ```
 curl -i localhost:8080/PlayerDetailsByName/Jalen/Green
 ```
