@@ -19,9 +19,9 @@ curl localhost:8080/GamesByDate/2022-OCT-01
 
 ### Request
 
-```
-curl localhost:8080/PlayersByTeam/{team}
-```
+`
+GET /PlayersByTeam/{team}
+`
 ### Example
 ```
 curl localhost:8080/PlayersByTeam/LAC
@@ -32,7 +32,7 @@ curl localhost:8080/PlayersByTeam/LAC
 ### Request
 
 ```
-curl localhost:8080/PlayerDetailsByName/{firstname}/{lastname}
+GET /PlayerDetailsByName/{firstname}/{lastname}
 ```
 ### Example
 ```
